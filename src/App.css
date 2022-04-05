@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(182, 182, 182);
+  font-family: "Roboto", sans-serif;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.Navigation {
+  display: flex;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: rgb(136, 136, 136);
+}
+
+.Navigation a {
+  text-decoration: none;
+  margin-right: 10px;
+  color: black;
+  font-size: 100%;
+  font-weight: 500;
+  background-color: rgb(136, 136, 136);
+}
+
+.SOL_Price {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  background-color: rgb(136, 136, 136);
+}
+
+.Home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Danjon_Header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.Danjon_About {
+  font-size: 125%;
+  margin: 20px;
+}
+
+.Tombstone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 1) 0px 8px 24px;
+}
+
+.Fenix {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 1) 0px 8px 24px;
+}
+
+.Tombstone img {
+  height: 350px;
+  margin: 10px;
+  margin-bottom: 5px;
+}
+
+.Fenix img {
+  height: 350px;
+  margin: 10px;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 500px) {
+  .Tombstone img {
+    height: 325px;
+    margin-bottom: 5px;
+  }
+
+  .Fenix img {
+    height: 325px;
+    margin-bottom: 5px;
+  }
+}
