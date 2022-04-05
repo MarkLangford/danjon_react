@@ -10,9 +10,9 @@ export default function Navigation() {
       fetch("https://api1.binance.com/api/v3/ticker/price?symbol=SOLUSDT")
         .then((res) => res.json())
         .then((price) => {
-          setSolPrice(price.price);
+          let finalPrice = parseFloat(price.price);
+          setSolPrice(finalPrice.toFixed(2));
           setIsLoaded(true);
-          console.log("ran");
         });
     }
     getSolPrice();

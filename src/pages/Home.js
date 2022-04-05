@@ -11,12 +11,16 @@ export default function Home() {
         <img src={tombstoneImage} />
         <div className="Tombstone_Description">
           <h3>Tombstone Collection</h3>
+          <p>
+            A collection of 4,444 Tombstones to reinact the rise of the Danjon
+          </p>
         </div>
       </div>
       <div className="Fenix">
         <img src={fenixImage} />
         <div className="Fenix_Description">
           <h3>Fenix Collection</h3>
+          <p>A collection of 2,222 Fenix to bring the Danjon back to life</p>
         </div>
       </div>
       <div className="Danjon_About">
