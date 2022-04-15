@@ -4,10 +4,12 @@ import Mint from "./pages/Mint";
 import Launchpad from "./pages/Launchpad";
 import Navigation from "./components/Navigation";
 import "./App.css";
+import background from "./images/background.png";
+import './fonts/CloisterBlack.ttf';
 
 export default function App() {
   return (
-    <div className="App">
+      <div className="App" style={{ backgroundImage: `url(${background})` }}>
       <BrowserRouter>
         <Navigation />
         <Routes>
