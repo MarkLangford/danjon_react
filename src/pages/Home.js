@@ -8,7 +8,7 @@ export default function Home() {
         <h1>Danjon Reborn</h1>
       </div>
       <div className="Tombstone">
-        <img src={tombstoneImage} alt="Tombstone Image"/>
+        <img src={tombstoneImage} alt="Tombstone"/>
         <div className="Tombstone_Description">
           <h3>Tombstone Collection</h3>
           <p>
@@ -17,7 +17,7 @@ export default function Home() {
         </div>
       </div>
       <div className="Fenix">
-        <img src={fenixImage} alt="Fenix Image" />
+        <img src={fenixImage} alt="Fenix" />
         <div className="Fenix_Description">
           <h3>Fenix Collection</h3>
           <p>A collection of 2,222 Fenix to bring the Danjon back to life</p>
