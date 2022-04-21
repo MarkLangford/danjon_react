@@ -17,7 +17,7 @@ export default function Navigation() {
         });
     }
     getSolPrice();
-    const interval = setInterval(() => getSolPrice(), 10000);
+    setInterval(() => getSolPrice(), 10000);
   }, []);
 
   return (
