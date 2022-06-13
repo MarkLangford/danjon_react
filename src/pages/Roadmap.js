@@ -1,3 +1,4 @@
+import React from 'react'
 import roadmapImage from "../images/dj_reborn_road_map.png";
 
 export default function Roadmap() {

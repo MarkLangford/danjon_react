@@ -1,12 +1,13 @@
+import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Mint from "./pages/Mint";
 import Launchpad from "./pages/Launchpad";
 import Navigation from "./components/Navigation";
-import "./App.css";
-import background from "./images/background.png";
-import "./fonts/CloisterBlack.ttf";
 import Roadmap from "./pages/Roadmap";
+import "./App.css";
+import "./fonts/CloisterBlack.ttf";
+
 
 export default function App() {
   return (

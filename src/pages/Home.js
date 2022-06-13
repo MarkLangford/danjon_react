@@ -1,5 +1,5 @@
+import React from 'react'
 import tombstoneImage from "../tombstone.png";
-import fenixImage from "../fenix.png";
 
 export default function Home() {
   return (

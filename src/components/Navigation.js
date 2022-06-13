@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import transparentLogo from "./../images/transparentLogo.png";
