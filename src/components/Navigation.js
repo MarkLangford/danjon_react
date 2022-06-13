@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import transparentLogo from './../images/transparentLogo.png';
+import transparentLogo from "./../images/transparentLogo.png";
 
 export default function Navigation() {
   const [solPrice, setSolPrice] = useState(0);
@@ -22,8 +22,13 @@ export default function Navigation() {
 
   return (
     <div className="Navigation">
-      <img src={transparentLogo} class="logo" alt="Logo"/>
-      <Link to="/">Danjon Reborn</Link>
+      <div className="Header">
+        <img src={transparentLogo} class="logo" alt="Logo" />
+        <Link to="/">Danjon Reborn</Link>
+      </div>
+      <div>
+        <Link to="/roadmap">Roadmap</Link>
+      </div>
       {/*<Link to="/mint">Mint</Link>
       <Link to="/launchpad">Launchpad</Link>*/}
       {isLoaded && <p className="SOL_Price">SOL: {solPrice}</p>}

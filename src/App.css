@@ -14,7 +14,8 @@
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  background-position: center;
+  background-color: #eb4511;
+  background-image: linear-gradient(315deg, #eb4511 0%, #7d2009 74%);
 }
 
 .Navigation {
@@ -22,14 +23,21 @@
   width: 100%;
   padding: 15px;
   margin-bottom: 10px;
-  background-color: #eb4511;
-  background-image: linear-gradient(315deg, #eb4511 0%, #b02e0c 74%);
   text-align: center;
   flex-wrap: nowrap;
   align-content: center;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+}
+
+.Navigation > div {
+  margin-right: 40px;
 }
 
 .Navigation a {
@@ -49,20 +57,13 @@
   align-items: center;
   margin-left: auto;
   float: right;
+  margin-right: 20px;
 }
 
 .Home {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.Danjon_Header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-  width: 100%;
 }
 
 .Danjon_About {
@@ -74,8 +75,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
   margin: 20px;
-  padding-bottom: 5px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 1) 0px 8px 24px;
   width: 400px;
@@ -87,7 +88,6 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 5px;
 }
 
 .Fenix_Description {
