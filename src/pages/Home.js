@@ -1,5 +1,5 @@
 import React from 'react'
-import tombstoneImage from "../tombstone.png";
+import danjonImage from "../images/danjon_reborn.jpg";
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
         </p>
       </div>
       <div className="Tombstone">
-        <img src={tombstoneImage} alt="Tombstone" />
+        <img src={danjonImage} alt="Tombstone" />
         <div className="Tombstone_Description">
           <h3>Tombstone Collection</h3>
           <p>
@@ -26,15 +26,6 @@ export default function Home() {
           </p>
         </div>
       </div>
-      {/*
-      <div className="Fenix">
-        <img src={fenixImage} alt="Fenix" />
-        <div className="Fenix_Description">
-          <h3>Fenix Collection</h3>
-          <p>A collection of 2,222 Fenix to bring the Danjon back to life</p>
-        </div>
-      </div>
-      */}
     </div>
   );
 }

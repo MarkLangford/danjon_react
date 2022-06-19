@@ -24,14 +24,15 @@ export default function Navigation() {
   return (
     <div className="Navigation">
       <div className="Header">
-        <img src={transparentLogo} class="logo" alt="Logo" />
+        <img src={transparentLogo} class="Logo" alt="Logo" />
         <Link to="/">Danjon Reborn</Link>
       </div>
       <div>
         <Link to="/roadmap">Roadmap</Link>
       </div>
-      {/*<Link to="/mint">Mint</Link>
-      <Link to="/launchpad">Launchpad</Link>*/}
+      <div>
+        <Link to="/contact">Contact</Link>
+      </div>
       {isLoaded && <p className="SOL_Price">SOL: {solPrice}</p>}
     </div>
   );

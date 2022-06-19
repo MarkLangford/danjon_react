@@ -14,8 +14,7 @@
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  background-color: #eb4511;
-  background-image: linear-gradient(315deg, #eb4511 0%, #7d2009 74%);
+  color: white;
 }
 
 .Navigation {
@@ -43,7 +42,7 @@
 .Navigation a {
   text-decoration: none;
   margin-right: 10px;
-  color: black;
+  color: white;
   font-size: x-large;
   font-weight: 500;
 }
@@ -71,6 +70,27 @@
   margin: 20px;
 }
 
+.Contact_About {
+  font-size: 125%;
+  margin: 20px;
+}
+
+.Contact_Media_Links {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 125%;
+  margin: 20px;
+}
+
+.Contact_Media_Links a:visited {
+  color: white;
+}
+
 .Tombstone {
   display: flex;
   flex-direction: column;
@@ -90,45 +110,29 @@
   text-align: center;
 }
 
-.Fenix_Description {
+.Roadmap {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin: 5px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 1) 0px 8px 24px;
+  width: 550px;
 }
 
 .Tombstone_Description h3 {
   margin: 5px;
 }
 
-.Fenix_Description h3 {
-  margin: 5px;
-}
-
-.Fenix {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
-  padding-bottom: 5px;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 1) 0px 8px 24px;
-  width: 400px;
-}
-
 .Tombstone img {
-  height: 350px;
-  margin: 20px;
+  height: 400px;
   margin-bottom: 5px;
   border-radius: 10px;
 }
 
-.Fenix img {
-  height: 350px;
-  margin: 20px;
-  margin-bottom: 5px;
+.Roadmap img {
+  height: 700px;
+  margin: 20PX;
   border-radius: 10px;
 }
 
@@ -136,15 +140,6 @@
   .Tombstone img {
     height: 325px;
     margin-bottom: 5px;
-  }
-
-  .Fenix img {
-    height: 325px;
-    margin-bottom: 5px;
-  }
-
-  .Fenix {
-    width: 350px;
   }
 
   .Tombstone {
