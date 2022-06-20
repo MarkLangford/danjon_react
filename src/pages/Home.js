@@ -9,7 +9,6 @@ export default function Home() {
 
   useEffect(() => {
     let slides = document.getElementsByClassName("Tombstone_Slides");
-    console.log(slideIndex);
     if (slideIndex > slides.length) {
       setSlideIndex(1);
     }
@@ -19,7 +18,6 @@ export default function Home() {
     for (let i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
-    console.log(slideIndex);
     if (slideIndex === 4) {
       slides[2].style.display = "block";
     } else {
@@ -50,12 +48,18 @@ export default function Home() {
           <img src={tombstoneImage2} style={{ width: "100%" }} alt="" />
         </div>
         <div className="Slideshow_Nav">
-          <a className="prev" onClick={(e) => setSlideIndex(slideIndex + -1)}>
+          <button
+            className="prev"
+            onClick={(e) => setSlideIndex(slideIndex + -1)}
+          >
             &#10094;
-          </a>
-          <a className="next" onClick={(e) => setSlideIndex(slideIndex + 1)}>
+          </button>
+          <button
+            className="next"
+            onClick={(e) => setSlideIndex(slideIndex + 1)}
+          >
             &#10095;
-          </a>
+          </button>
         </div>
         <div className="Tombstone_Description">
           <h3>Tombstone Collection</h3>
