@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Mint from "./pages/Mint";
@@ -8,11 +8,10 @@ import Roadmap from "./pages/Roadmap";
 import Contact from "./pages/Contact";
 import "./App.css";
 import "./fonts/CloisterBlack.ttf";
-import backgroundImage from "./images/background.png";
 
 export default function App() {
   return (
-    <div className="App" style={{backgroundImage: `url(${backgroundImage})`}}>
+    <div className="App">
       <BrowserRouter>
         <Navigation />
         <Routes>

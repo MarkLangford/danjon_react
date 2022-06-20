@@ -1,7 +1,8 @@
-import React from 'react'
+import React from "react";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import transparentLogo from "./../images/transparentLogo.png";
+import transparentLogo from "./../images/transparentLogoWhite.png";
+import backgroundImage from "../images/background.png";
 
 export default function Navigation() {
   const [solPrice, setSolPrice] = useState(0);
@@ -9,6 +10,7 @@ export default function Navigation() {
 
   useEffect(() => {
     function getSolPrice() {
+      document.body.style.background = `url(${backgroundImage})`;
       fetch("https://api1.binance.com/api/v3/ticker/price?symbol=SOLUSDT")
         .then((res) => res.json())
         .then((price) => {
@@ -24,8 +26,14 @@ export default function Navigation() {
   return (
     <div className="Navigation">
       <div className="Header">
-        <img src={transparentLogo} class="Logo" alt="Logo" />
-        <Link to="/">Danjon Reborn</Link>
+        <Link to="/">
+          <img
+            src={transparentLogo}
+            class="Logo"
+            alt="Logo"
+            style={{ color: "white" }}
+          />
+        </Link>
       </div>
       <div>
         <Link to="/roadmap">Roadmap</Link>

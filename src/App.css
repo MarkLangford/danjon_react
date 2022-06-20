@@ -9,11 +9,17 @@
   src: local("CloisterBlack"), url(./fonts/CloisterBlack.ttf) format("truetype");
 }
 
+body,
+html {
+  height: 100%;
+}
+
 .App {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
+  height: 100%;
   color: white;
 }
 
@@ -68,11 +74,13 @@
 .Danjon_About {
   font-size: 125%;
   margin: 20px;
+  text-align: center;
 }
 
 .Contact_About {
   font-size: 125%;
   margin: 20px;
+  text-align: center;
 }
 
 .Contact_Media_Links {
@@ -132,7 +140,7 @@
 
 .Roadmap img {
   height: 700px;
-  margin: 20PX;
+  margin: 20px;
   border-radius: 10px;
 }
 
@@ -144,5 +152,56 @@
 
   .Tombstone {
     width: 350px;
+  }
+
+  .Roadmap img {
+    height: 500px;
+    margin: 20px;
+    border-radius: 10px;
+  }
+
+  .Roadmap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 1) 0px 8px 24px;
+    width: 550px;
+  }
+
+  .Navigation > div {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .Tombstone img {
+    height: 250px;
+    margin-bottom: 5px;
+  }
+
+  .Tombstone {
+    width: 300px;
+  }
+
+  .Roadmap img {
+    height: 250px;
+    margin: 20px;
+    border-radius: 10px;
+  }
+
+  .Roadmap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 1) 0px 8px 24px;
+    width: 300px;
+  }
+
+  .Navigation > div {
+    margin-right: 10px;
   }
 }
