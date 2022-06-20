@@ -84,6 +84,7 @@ html {
 
 .Lore_Text {
   margin: 20px;
+  font-size: 125%;
 }
 
 .Contact_Media_Links {
@@ -212,7 +213,7 @@ html {
     display: flex;
     flex-direction: column;
   }
-  
+
   .Links a {
     margin: 0;
   }
