@@ -28,10 +28,10 @@ html {
   width: 100%;
   padding: 15px;
   margin-bottom: 10px;
+  justify-content: space-between;
   text-align: center;
   flex-wrap: nowrap;
   align-content: center;
-  justify-content: space-around;
   align-items: center;
   flex-direction: row;
 }
@@ -39,10 +39,6 @@ html {
 .Header {
   display: flex;
   align-items: center;
-}
-
-.Navigation > div {
-  margin-right: 40px;
 }
 
 .Navigation a {
@@ -57,10 +53,13 @@ html {
   height: 50px;
 }
 
+.Links a {
+  margin: 20px;
+}
+
 .SOL_Price {
   display: flex;
   align-items: center;
-  margin-left: auto;
   float: right;
   margin-right: 20px;
 }
@@ -81,6 +80,10 @@ html {
   font-size: 125%;
   margin: 20px;
   text-align: center;
+}
+
+.Lore_Text {
+  margin: 20px;
 }
 
 .Contact_Media_Links {
@@ -205,8 +208,13 @@ html {
     width: 550px;
   }
 
-  .Navigation > div {
-    margin-right: 10px;
+  .Links {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Links a {
+    margin: 0;
   }
 }
 
@@ -221,7 +229,7 @@ html {
   }
 
   .Roadmap img {
-    height: 250px;
+    height: 300px;
     margin: 20px;
     border-radius: 10px;
   }
@@ -236,7 +244,12 @@ html {
     width: 300px;
   }
 
-  .Navigation > div {
-    margin-right: 10px;
+  .Links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Links a {
+    margin: 0;
   }
 }

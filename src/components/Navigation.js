@@ -10,6 +10,7 @@ export default function Navigation() {
 
   useEffect(() => {
     function getSolPrice() {
+      // Set Background to bosy so we get fullscreen
       document.body.style.background = `url(${backgroundImage})`;
       document.body.style.backgroundPosition = "center";
       document.body.style.backgroundRepeat = "no-repeat";
@@ -30,18 +31,12 @@ export default function Navigation() {
     <div className="Navigation">
       <div className="Header">
         <Link to="/">
-          <img
-            src={transparentLogo}
-            class="Logo"
-            alt="Logo"
-            style={{ color: "white" }}
-          />
+          <img src={transparentLogo} className="Logo" alt="Logo" />
         </Link>
       </div>
-      <div>
+      <div className="Links">
         <Link to="/roadmap">Roadmap</Link>
-      </div>
-      <div>
+        <Link to="/lore">Lore</Link>
         <Link to="/contact">Contact</Link>
       </div>
       {isLoaded && <p className="SOL_Price">SOL: {solPrice}</p>}
