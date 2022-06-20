@@ -1,29 +1,31 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import tombstoneImage from "../images/danjon_reborn.jpg";
 import tombstoneImage1 from "../images/danjon_reborn_1.png";
 import tombstoneImage2 from "../images/danjon_reborn_2.png";
 
 export default function Home() {
-  let slideIndex = 0;
+  const [slideIndex, setSlideIndex] = useState(1);
 
-  function plusSlides(n) {
-    showSlides((slideIndex += n));
-  }
-
-  function showSlides() {
+  useEffect(() => {
     let slides = document.getElementsByClassName("Tombstone_Slides");
-    if (slideIndex > slides.length - 1) {
-      slideIndex = 0;
+    console.log(slideIndex);
+    if (slideIndex > slides.length) {
+      setSlideIndex(1);
     }
     if (slideIndex < 0) {
-      slideIndex = slides.length - 1;
+      setSlideIndex(slides.length);
     }
     for (let i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
-    slides[slideIndex].style.display = "block";
-  }
+    console.log(slideIndex);
+    if (slideIndex === 4) {
+      slides[2].style.display = "block";
+    } else {
+      slides[slideIndex - 1].style.display = "block";
+    }
+  }, [slideIndex]);
 
   return (
     <div className="Home">
@@ -36,7 +38,7 @@ export default function Home() {
         </p>
       </div>
       <div className="Tombstone_Slideshow">
-        <div className="Tombstone_Slides fade" style={{ display: "block" }}>
+        <div className="Tombstone_Slides fade">
           <img src={tombstoneImage} style={{ width: "100%" }} alt="" />
         </div>
 
@@ -48,10 +50,10 @@ export default function Home() {
           <img src={tombstoneImage2} style={{ width: "100%" }} alt="" />
         </div>
         <div className="Slideshow_Nav">
-          <a className="prev" onClick={(e) => plusSlides(-1)}>
+          <a className="prev" onClick={(e) => setSlideIndex(slideIndex + -1)}>
             &#10094;
           </a>
-          <a className="next" onClick={(e) => plusSlides(1)}>
+          <a className="next" onClick={(e) => setSlideIndex(slideIndex + 1)}>
             &#10095;
           </a>
         </div>
