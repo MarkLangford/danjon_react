@@ -11,6 +11,9 @@ export default function Navigation() {
   useEffect(() => {
     function getSolPrice() {
       document.body.style.background = `url(${backgroundImage})`;
+      document.body.style.backgroundPosition = "center";
+      document.body.style.backgroundRepeat = "no-repeat";
+      document.body.style.backgroundAttachment = "fixed";
       fetch("https://api1.binance.com/api/v3/ticker/price?symbol=SOLUSDT")
         .then((res) => res.json())
         .then((price) => {
