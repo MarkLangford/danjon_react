@@ -103,6 +103,10 @@ html {
   color: white;
 }
 
+.Contact_Media_Links a {
+  color: white;
+}
+
 .Tombstone_Slideshow {
   display: flex;
   flex-direction: column;

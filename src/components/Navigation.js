@@ -12,6 +12,7 @@ export default function Navigation() {
     function getSolPrice() {
       // Set Background to bosy so we get fullscreen
       document.body.style.background = `url(${backgroundImage})`;
+      document.body.style.backgroundSize = "cover";
       document.body.style.backgroundPosition = "center";
       document.body.style.backgroundRepeat = "no-repeat";
       document.body.style.backgroundAttachment = "fixed";
